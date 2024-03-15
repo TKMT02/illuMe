@@ -1,0 +1,39 @@
+.postlist_area{
+    width: 80%;
+    height: fit-content;
+    margin: 10px auto;
+    padding: 20px 0;
+    background-color: #fff;
+    border-radius: 24px;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.10);
+    h2{
+        font-size: 18px;
+        font-weight: normal;
+        margin-left: 10%;
+        padding: 10px 0;
+    }
+    ul{
+        display: flex;
+        flex-direction: column;
+        li{
+            text-decoration: none;
+            list-style: none;
+            width: 80%;
+            margin: 5px auto;
+            padding: 10px 20px;
+            font-size: 16px;
+            background: linear-gradient(262deg, #59D4FA 36.35%, #B1EDFF 96.4%);
+            border-radius: 100vh;
+            position: relative;
+            &::after {
+                content: "";
+                width: 16px;
+                height: 15px;
+                background: url("/assets/comment_arrow.svg") no-repeat top/contain;
+                position: absolute;
+                top: 86%;
+                left: 16%;
+            }
+        }
+    }
+}

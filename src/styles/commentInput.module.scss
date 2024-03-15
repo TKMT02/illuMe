@@ -1,0 +1,43 @@
+.commentinput_area {
+    z-index: 1000;
+    position: fixed;
+    bottom: 112px;
+    width: 90%;
+    padding: 10px;
+    border-radius: 100vh;
+    background: linear-gradient(232deg, #1e86e5 32.74%, #1ec1e5 95.49%);
+    &_container {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .commentinput_text {
+            display: flex;
+            align-items: center;
+            // justify-content: center;
+            width: 100%;
+            input {
+                width: 60%;
+                padding: 0 10px;
+                border: 0.5px solid rgba(255, 255, 255, 0.5);
+                background: rgba(255, 255, 255, 0.3);
+                border-radius: 100vh;
+                font-size: 14px;
+                &::placeholder {
+                    color: #fff;
+                }
+            }
+            p {
+                padding: 0 10px;
+
+                color: #fff;
+                font-size: 14px;
+            }
+        }
+        .commentinput_send {
+            padding: 0 10px;
+            border-left: 1px solid #fff;
+        }
+    }
+}
